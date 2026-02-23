@@ -83,6 +83,18 @@ export const restaurants: Restaurant[] = [
   { id: "r10", name: "Truffles", image: dishBurger, cuisines: ["Burger", "American", "Continental"], rating: 4.5, deliveryTime: "30-35 min", priceForTwo: 700, discount: "₹50 OFF ABOVE ₹199" },
   { id: "r11", name: "A2B - Adyar Ananda Bhavan", image: dishSouthIndian, cuisines: ["South Indian", "Sweets", "North Indian"], rating: 4.2, deliveryTime: "20-30 min", priceForTwo: 350, veg: true },
   { id: "r12", name: "Domino's Pizza", image: dishPizza, cuisines: ["Pizza", "Italian", "Pasta"], rating: 4.0, deliveryTime: "25-30 min", priceForTwo: 500, discount: "60% OFF up to ₹120" },
+  { id: "r13", name: "Behrouz Biryani", image: dishBiryani, cuisines: ["Biryani", "Mughlai", "North Indian"], rating: 4.4, deliveryTime: "35-40 min", priceForTwo: 650, discount: "₹150 OFF ABOVE ₹499" },
+  { id: "r14", name: "McDonald's", image: dishBurger, cuisines: ["Burger", "Fast Food", "American"], rating: 4.1, deliveryTime: "15-20 min", priceForTwo: 400, discount: "Buy 1 Get 1 FREE" },
+  { id: "r15", name: "Barbeque Nation", image: dishNorthIndian, cuisines: ["North Indian", "BBQ", "Kebabs"], rating: 4.5, deliveryTime: "40-50 min", priceForTwo: 1200, promoted: true },
+  { id: "r16", name: "Sagar Ratna", image: dishSouthIndian, cuisines: ["South Indian", "North Indian", "Chinese"], rating: 4.0, deliveryTime: "20-30 min", priceForTwo: 400, veg: true },
+  { id: "r17", name: "Chai Point", image: foodBeverages, cuisines: ["Beverages", "Snacks", "Cafe"], rating: 4.2, deliveryTime: "10-15 min", priceForTwo: 200, discount: "FREE DELIVERY" },
+  { id: "r18", name: "Faasos - Wraps & Rolls", image: dishNorthIndian, cuisines: ["North Indian", "Fast Food", "Wraps"], rating: 4.0, deliveryTime: "20-25 min", priceForTwo: 300, discount: "₹75 OFF ABOVE ₹199" },
+  { id: "r19", name: "Baskin Robbins", image: foodDessert, cuisines: ["Desserts", "Ice Cream"], rating: 4.3, deliveryTime: "15-25 min", priceForTwo: 450, veg: true },
+  { id: "r20", name: "Panda Chinese", image: dishChinese, cuisines: ["Chinese", "Thai", "Momos"], rating: 3.8, deliveryTime: "25-30 min", priceForTwo: 350, discount: "30% OFF" },
+  { id: "r21", name: "Theobroma", image: foodDessert, cuisines: ["Desserts", "Bakery", "Cafe"], rating: 4.6, deliveryTime: "20-30 min", priceForTwo: 500, promoted: true },
+  { id: "r22", name: "Haldiram's", image: dishNorthIndian, cuisines: ["North Indian", "Sweets", "Starters"], rating: 4.1, deliveryTime: "20-25 min", priceForTwo: 350, veg: true, discount: "20% OFF" },
+  { id: "r23", name: "KFC", image: dishBurger, cuisines: ["Burger", "Fast Food", "American"], rating: 4.0, deliveryTime: "20-30 min", priceForTwo: 500, discount: "₹100 OFF ABOVE ₹399" },
+  { id: "r24", name: "Subway", image: dishHealthy, cuisines: ["Healthy", "Fast Food", "Wraps"], rating: 3.9, deliveryTime: "15-20 min", priceForTwo: 400 },
 ];
 
 export const dishes: Dish[] = [
@@ -94,6 +106,18 @@ export const dishes: Dish[] = [
   { id: "d6", name: "Whopper Burger", restaurant: "Burger King", restaurantId: "r6", image: dishBurger, price: 189, rating: 4.1, veg: false, description: "Flame-grilled beef patty with lettuce, tomato, onion, and special sauce" },
   { id: "d7", name: "Butter Chicken", restaurant: "Punjab Grill", restaurantId: "r7", image: dishNorthIndian, price: 329, rating: 4.5, veg: false, description: "Tender chicken in rich tomato-butter gravy with cream and kasuri methi" },
   { id: "d8", name: "Gulab Jamun", restaurant: "A2B", restaurantId: "r11", image: foodDessert, price: 79, rating: 4.3, veg: true, description: "Soft milk dumplings soaked in rose-cardamom flavored sugar syrup" },
+  { id: "d9", name: "Paneer Tikka", restaurant: "Punjab Grill", restaurantId: "r7", image: dishNorthIndian, price: 269, rating: 4.4, veg: true, description: "Marinated cottage cheese cubes grilled in tandoor with bell peppers and onions" },
+  { id: "d10", name: "Chicken Momos", restaurant: "Panda Chinese", restaurantId: "r20", image: dishChinese, price: 149, rating: 4.2, veg: false, description: "Steamed dumplings filled with spiced minced chicken, served with spicy chutney" },
+  { id: "d11", name: "Veg Fried Rice", restaurant: "Wok Express", restaurantId: "r3", image: dishChinese, price: 159, rating: 4.0, veg: true, description: "Wok-tossed rice with mixed vegetables, soy sauce, and aromatic seasonings" },
+  { id: "d12", name: "Pepperoni Pizza", restaurant: "Domino's Pizza", restaurantId: "r12", image: dishPizza, price: 349, rating: 4.3, veg: false, description: "Loaded with spicy pepperoni slices on a cheesy base with tangy tomato sauce" },
+  { id: "d13", name: "Chole Bhature", restaurant: "Haldiram's", restaurantId: "r22", image: dishNorthIndian, price: 149, rating: 4.2, veg: true, description: "Fluffy deep-fried bread served with spicy chickpea curry and pickled onion" },
+  { id: "d14", name: "Mutton Biryani", restaurant: "Behrouz Biryani", restaurantId: "r13", image: dishBiryani, price: 399, rating: 4.6, veg: false, description: "Royal Mughlai biryani with slow-cooked mutton, saffron rice, and aromatic spices" },
+  { id: "d15", name: "Brownie Sundae", restaurant: "Theobroma", restaurantId: "r21", image: foodDessert, price: 199, rating: 4.7, veg: true, description: "Warm chocolate brownie topped with vanilla ice cream, hot fudge, and whipped cream" },
+  { id: "d16", name: "McChicken Burger", restaurant: "McDonald's", restaurantId: "r14", image: dishBurger, price: 149, rating: 4.0, veg: false, description: "Crispy chicken patty with lettuce and creamy mayo in a sesame seed bun" },
+  { id: "d17", name: "Masala Chai", restaurant: "Chai Point", restaurantId: "r17", image: foodBeverages, price: 49, rating: 4.3, veg: true, description: "Authentic Indian spiced tea brewed with fresh ginger, cardamom, and cloves" },
+  { id: "d18", name: "Idli Sambar", restaurant: "Sagar Ratna", restaurantId: "r16", image: dishSouthIndian, price: 89, rating: 4.1, veg: true, description: "Soft steamed rice cakes served with lentil sambar and coconut chutney" },
+  { id: "d19", name: "Chicken Wrap", restaurant: "Faasos", restaurantId: "r18", image: dishNorthIndian, price: 139, rating: 4.0, veg: false, description: "Grilled chicken strips wrapped in soft tortilla with veggies and chipotle sauce" },
+  { id: "d20", name: "Cold Coffee", restaurant: "Cafe Coffee Day", restaurantId: "r9", image: foodBeverages, price: 159, rating: 4.1, veg: true, description: "Chilled blended coffee with milk, cream, and a hint of vanilla sweetness" },
 ];
 
 export const reviews = [
@@ -102,4 +126,7 @@ export const reviews = [
   { user: "Karthik R.", rating: 5, text: "Butter chicken was absolutely divine. Will order again for sure!", date: "3 days ago" },
   { user: "Sneha L.", rating: 4, text: "Good variety of healthy options. The quinoa bowl is my go-to lunch.", date: "5 days ago" },
   { user: "Vikram P.", rating: 3, text: "Food was decent but delivery took a bit longer than expected.", date: "1 week ago" },
+  { user: "Ananya K.", rating: 5, text: "The momos from Panda Chinese are absolutely addictive! Must try.", date: "3 days ago" },
+  { user: "Deepak R.", rating: 4, text: "Theobroma brownies never disappoint. Perfect dessert after dinner.", date: "4 days ago" },
+  { user: "Meera S.", rating: 5, text: "Behrouz mutton biryani is royal! Rich flavors and generous portions.", date: "1 day ago" },
 ];
