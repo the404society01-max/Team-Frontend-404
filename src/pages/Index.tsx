@@ -5,6 +5,12 @@ import HeroBanner from "@/components/zomato/HeroBanner";
 import CategoryChips from "@/components/zomato/CategoryChips";
 import RestaurantGrid from "@/components/zomato/RestaurantGrid";
 import TrendingSection from "@/components/zomato/TrendingSection";
+import FlashDeals from "@/components/zomato/FlashDeals";
+import ReviewsSection from "@/components/zomato/ReviewsSection";
+import OrderTracking from "@/components/zomato/OrderTracking";
+import LoyaltyProgram from "@/components/zomato/LoyaltyProgram";
+import MapSection from "@/components/zomato/MapSection";
+import WhatsAppButton from "@/components/zomato/WhatsAppButton";
 import ZomatoFooter from "@/components/zomato/ZomatoFooter";
 import CartDrawer from "@/components/zomato/CartDrawer";
 import AuthModal from "@/components/zomato/AuthModal";
@@ -38,6 +44,9 @@ const Index = () => {
 
       <CategoryChips onCategoryClick={setActiveCategory} activeCategory={activeCategory} />
 
+      {/* NEW: Flash Deals & Daily Offers */}
+      <FlashDeals />
+
       <TrendingSection />
 
       <RestaurantGrid
@@ -46,7 +55,22 @@ const Index = () => {
         onRestaurantClick={setSelectedRestaurant}
       />
 
+      {/* NEW: Live Order Tracking */}
+      <OrderTracking />
+
+      {/* NEW: Customer Reviews */}
+      <ReviewsSection />
+
+      {/* NEW: Loyalty Program */}
+      <LoyaltyProgram />
+
+      {/* NEW: Restaurant Map */}
+      <MapSection />
+
       <ZomatoFooter />
+
+      {/* NEW: WhatsApp Floating Button */}
+      <WhatsAppButton />
 
       {/* Modals & Drawers */}
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
