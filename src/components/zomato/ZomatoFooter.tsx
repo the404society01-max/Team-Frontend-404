@@ -1,8 +1,8 @@
 import { MapPin, Instagram, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const footerLinks = {
-  "About Zomato": ["Who We Are", "Blog", "Work With Us", "Investor Relations", "Report Fraud"],
-  "Zomaverse": ["Zomato", "Blinkit", "Feeding India", "Hyperpure", "Zomaland"],
+  "About FOOD": ["Who We Are", "Blog", "Work With Us", "Investor Relations", "Report Fraud"],
+  "FOODverse": ["FOOD", "Blinkit", "Feeding India", "Hyperpure", "FOODland"],
   "For Restaurants": ["Partner With Us", "Apps For You", "Restaurant Widgets"],
   "Learn More": ["Privacy", "Security", "Terms", "Sitemap"],
 };
@@ -13,7 +13,7 @@ const ZomatoFooter = () => (
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
         {/* Brand */}
         <div className="col-span-2 md:col-span-4 lg:col-span-1">
-          <span className="text-primary font-extrabold text-2xl">zomato</span>
+          <span className="text-primary font-extrabold text-2xl">FOOD</span>
           <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
             Better food for more people.
           </p>
@@ -63,7 +63,7 @@ const ZomatoFooter = () => (
 
       {/* Copyright */}
       <div className="mt-8 pt-6 border-t border-border text-center text-xs text-muted-foreground">
-        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2026 © Zomato™ Ltd. All rights reserved.
+        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2026 © FOOD™ Ltd. All rights reserved.
       </div>
     </div>
   </footer>

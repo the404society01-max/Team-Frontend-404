@@ -32,7 +32,7 @@ const ZomatoNavbar = ({ onCartClick, onLoginClick, searchQuery, onSearchChange, 
       <div className="container mx-auto flex items-center h-16 gap-3">
         {/* Logo */}
         <a href="/" className="text-primary font-extrabold text-2xl tracking-tight shrink-0">
-          zomato
+          FOOD
         </a>
 
         {/* Location Selector */}
