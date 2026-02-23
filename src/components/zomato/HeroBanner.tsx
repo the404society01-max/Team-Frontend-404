@@ -14,7 +14,7 @@ const HeroBanner = ({ searchQuery, onSearchChange }: Props) => (
     </div>
     <div className="relative container mx-auto px-4 py-20 md:py-32 text-center">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 animate-slide-up" style={{ color: 'white' }}>
-        zomato
+        FOOD
       </h1>
       <p className="text-lg md:text-xl mb-8 animate-slide-up opacity-90" style={{ color: 'rgba(255,255,255,0.85)', animationDelay: '0.1s' }}>
         Discover the best food & drinks in <span className="font-semibold">Shivamogga</span>
