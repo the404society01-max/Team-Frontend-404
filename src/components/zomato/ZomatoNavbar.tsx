@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import { Search, MapPin, ChevronDown, ShoppingBag, Menu, X, User, Tag, Moon, Sun } from "lucide-react";
 import { cities } from "@/data/zomatoData";
 import { useCart } from "@/context/CartContext";
+import VoiceSearch from "./VoiceSearch";
+import VegModeToggle from "./VegModeToggle";
 
 interface Props {
   onCartClick: () => void;
@@ -10,9 +12,11 @@ interface Props {
   onSearchChange: (q: string) => void;
   darkMode: boolean;
   onToggleDark: () => void;
+  vegMode: boolean;
+  onToggleVeg: () => void;
 }
 
-const ZomatoNavbar = ({ onCartClick, onLoginClick, searchQuery, onSearchChange, darkMode, onToggleDark }: Props) => {
+const ZomatoNavbar = ({ onCartClick, onLoginClick, searchQuery, onSearchChange, darkMode, onToggleDark, vegMode, onToggleVeg }: Props) => {
   const [cityOpen, setCityOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState("Shivamogga, Karnataka");
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -74,6 +78,7 @@ const ZomatoNavbar = ({ onCartClick, onLoginClick, searchQuery, onSearchChange, 
             className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none"
             aria-label="Search restaurants"
           />
+          <VoiceSearch onResult={onSearchChange} />
         </div>
 
         {/* Right Actions */}
@@ -81,6 +86,9 @@ const ZomatoNavbar = ({ onCartClick, onLoginClick, searchQuery, onSearchChange, 
           <button onClick={onToggleDark} className="p-2 rounded-lg hover:bg-secondary transition-colors" aria-label="Toggle dark mode">
             {darkMode ? <Sun className="h-5 w-5 text-zomato-gold" /> : <Moon className="h-5 w-5 text-muted-foreground" />}
           </button>
+          <div className="hidden md:block">
+            <VegModeToggle vegMode={vegMode} onToggle={onToggleVeg} />
+          </div>
           <button className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-secondary transition-colors text-sm text-foreground">
             <Tag className="h-4 w-4" /> Offers
           </button>
