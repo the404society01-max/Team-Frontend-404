@@ -40,7 +40,7 @@ const AIRecommendations = () => {
           <h2 className="text-xl md:text-2xl font-bold text-foreground">Picked for You</h2>
         </div>
         <p className="text-sm text-muted-foreground mb-5">
-          {userName}, based on your orders — try these next! 🍽️
+          Based on your orders — try these next! 🍽️
         </p>
 
         <div className="relative group">
