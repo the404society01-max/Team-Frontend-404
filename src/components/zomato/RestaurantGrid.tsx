@@ -7,11 +7,12 @@ interface Props {
   searchQuery: string;
   activeCategory: string;
   onRestaurantClick: (r: Restaurant) => void;
+  vegMode?: boolean;
 }
 
 type SortKey = "rating" | "deliveryTime" | "priceForTwo";
 
-const RestaurantGrid = ({ searchQuery, activeCategory, onRestaurantClick }: Props) => {
+const RestaurantGrid = ({ searchQuery, activeCategory, onRestaurantClick, vegMode = false }: Props) => {
   const [sortBy, setSortBy] = useState<SortKey>("rating");
   const [showFilters, setShowFilters] = useState(false);
   const [vegOnly, setVegOnly] = useState(false);
@@ -22,7 +23,7 @@ const RestaurantGrid = ({ searchQuery, activeCategory, onRestaurantClick }: Prop
       const q = searchQuery.toLowerCase();
       const matchesSearch = !q || r.name.toLowerCase().includes(q) || r.cuisines.some((c) => c.toLowerCase().includes(q));
       const matchesCat = !activeCategory || r.cuisines.some((c) => c.toLowerCase().includes(activeCategory.toLowerCase()));
-      const matchesVeg = !vegOnly || r.veg;
+      const matchesVeg = !(vegOnly || vegMode) || r.veg;
       return matchesSearch && matchesCat && matchesVeg;
     })
     .sort((a, b) => {
