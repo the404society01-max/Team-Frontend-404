@@ -13,10 +13,7 @@ const AIRecommendations = () => {
   useEffect(() => {
     const stored = localStorage.getItem("food-user-name");
     if (stored) setUserName(stored);
-    else {
-      localStorage.setItem("food-user-name", "Ananya");
-      setUserName("Ananya");
-    }
+    
     // Track viewed dishes
     const past = JSON.parse(localStorage.getItem("food-past-orders") || "[]");
     if (past.length === 0) {
