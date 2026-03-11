@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+Reducing Alert Fatigue in Remote Patient Monitoring (RPM)
+Overview:
+Remote Patient Monitoring (RPM) systems collect continuous health data from wearable devices such as smartwatches and medical patches. These devices generate large amounts of data, which often results in a high number of alerts. Many of these alerts are false positives or non-actionable notifications caused by normal activities like walking or minor fluctuations in vital signs.
+This project focuses on developing an intelligent system that reduces alert fatigue by filtering irrelevant alerts and highlighting only meaningful health warnings for clinicians.
 
-## Project info
+Problem Statement:
+With the rapid growth of wearable health devices, clinicians receive a continuous stream of patient data such as heart rate and oxygen saturation levels. Most existing monitoring systems trigger alerts based only on fixed thresholds, without considering context or patterns in the data.
+This leads to several issues:
+Large number of false alerts
+Clinician overload
+Important alerts being ignored
+Lack of contextual analysis
+This phenomenon is known as Alert Fatigue, where healthcare professionals become desensitized to alerts due to their excessive frequency.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Objective:
+The objective of this project is to design an intelligent monitoring dashboard that:
+Aggregates RPM data from wearable devices
+Detects genuine health anomalies
+Filters unnecessary alerts
+Helps clinicians quickly review patient conditions
 
-## How can I edit this code?
+Key Features:
+Time-Series Data Simulation
+The system simulates patient vital data such as:
+Heart Rate (HR)
+Blood Oxygen Level (SpO₂)
+These values change over time to represent real-world patient monitoring data.
+Intelligent Alert Filtering
+Instead of reacting to every small change, the system analyzes trends in the data and generates alerts only when there is a significant anomaly or deterioration pattern.
+Custom Threshold Configuration
+Users can define custom thresholds for vital signs based on patient requirements.
+Data Visualization Dashboard
 
-There are several ways of editing your application.
+The system provides a simple dashboard where clinicians can view:
+Vital sign graphs
+Alert notifications
+Anomaly highlights
+Noise Reduction
+The system filters alerts caused by normal daily activities to ensure that clinicians only see important alerts.
 
-**Use Lovable**
+System Architecture:
+The system consists of the following components:
+Data Simulation Module – Generates time-series patient vitals data.
+Data Processing Module – Processes and analyzes vital signs.
+Alert Filtering Engine – Applies thresholds and intelligent logic to detect meaningful alerts.
+Visualization Dashboard – Displays filtered alerts and patient data.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Technologies Used:
+The project can be implemented using the following technologies:
+Python
+Pandas
+NumPy
+Matplotlib or Plotly
+Streamlit or Flask for dashboard interface
 
-Changes made via Lovable will be committed automatically to this repo.
+Expected Outcome:
+The system aims to:
+Reduce unnecessary alerts
+Improve clinician efficiency
+Highlight genuine health deterioration trends
+Provide a clear and quick patient monitoring interface
+Future Enhancements
 
-**Use your preferred IDE**
+Possible improvements include:
+Integration with real wearable device APIs
+Machine learning models for predictive health monitoring
+Multi-patient monitoring dashboards
+Mobile notifications for critical alerts
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Conclusion:
+Alert fatigue is a major challenge in modern healthcare monitoring systems. By intelligently filtering alerts and presenting only relevant information, this project helps clinicians focus on critical patient conditions and improves the efficiency of remote patient monitoring systems.
