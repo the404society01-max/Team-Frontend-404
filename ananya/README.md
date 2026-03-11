@@ -1,73 +1,108 @@
-# Welcome to your Lovable project
+Early Warning System for Pest Outbreaks Overview
 
-## Project info
+Pest outbreaks can destroy large areas of crops within a short time. In many cases, alerts reach farmers too late, after the infestation has already spread.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The Early Warning System for Pest Outbreaks is a community-driven platform designed to detect pest sightings early and warn nearby farmers before the infestation spreads. By combining crowdsourced pest reports, location data, and environmental conditions (wind/weather), the system predicts possible spread patterns and sends timely alerts to farmers.
 
-## How can I edit this code?
+The goal is simple: detect early → warn quickly → reduce crop damage.
 
-There are several ways of editing your application.
+Problem Statement
 
-**Use Lovable**
+Pests such as the Fall Armyworm can rapidly destroy crops across large agricultural areas. Current alert systems are often delayed and fail to provide farmers with enough time to act.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Key issues:
 
-Changes made via Lovable will be committed automatically to this repo.
+Pest outbreaks spread rapidly across farms.
 
-**Use your preferred IDE**
+Farmers often receive warnings too late.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Lack of real-time reporting from the ground.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+No simple system connecting farmers to share pest sightings.
 
-Follow these steps:
+Solution
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This project proposes a crowdsourced early warning system where farmers report pest sightings through a simple interface. The system then:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Collects pest reports with location data.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Uses wind direction and weather conditions to estimate spread.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Identifies nearby farms at risk.
 
-**Edit a file directly in GitHub**
+Sends alerts via SMS or notifications to farmers in affected areas.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This allows neighboring farmers to take preventive action before pests reach their crops.
 
-**Use GitHub Codespaces**
+Core Features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Crowdsourced Pest Reporting
+Farmers can report pest sightings easily using a simple interface.
 
-## What technologies are used for this project?
+Real-Time Monitoring
+The system records pest sightings instantly and updates the spread risk dynamically.
 
-This project is built with:
+Spread Prediction
+Using environmental data such as wind direction and weather, the system estimates the possible spread area.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Farmer Alerts
+Nearby farmers receive SMS alerts or notifications warning them about potential pest spread.
 
-## How can I deploy this project?
+Map Visualization
+Pest sightings and predicted spread zones are displayed on a map to help visualize risk areas.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+System Workflow
 
-## Can I connect a custom domain to my Lovable project?
+A farmer spots a pest and reports it in the system.
 
-Yes, you can!
+The system records the location and time of the report.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Environmental data (wind/weather) is analyzed.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The system predicts possible spread direction and radius.
+
+Farmers within the predicted spread zone receive alerts.
+
+Design Objectives
+
+Provide early detection of pest outbreaks
+
+Enable community-driven pest monitoring
+
+Reduce crop losses through preventive action
+
+Provide real-time alerts to nearby farmers
+
+Constraints & Assumptions
+
+The system relies on accurate pest reporting from farmers.
+
+The interface must be extremely simple to ensure adoption.
+
+The spread model uses wind direction and weather data as primary factors.
+
+Visualization should clearly show pest spread vectors on a map.
+
+Potential Impact
+
+Faster pest outbreak detection
+
+Reduced agricultural losses
+
+Improved farmer collaboration
+
+Scalable solution for rural agricultural communities
+
+Future Improvements
+
+AI-based pest identification using images
+
+Integration with satellite weather data
+
+Automated pest spread prediction models
+
+Mobile application for easier reporting
+
+Project Type
+
+Agricultural Technology / Smart Farming Solution
